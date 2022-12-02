@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+</head>
+<body>
+    <h2 id="creat">It is Big Name</h2>
+    
+    <input id="text" type="text" placeholder="place type dalete">
+    <button id="btu" disabled>Delete</button>
+
+<script>
+    // document.getElementById('log').addEventListener('keydown', function(even){
+    //     console.log(even.target.value);
+    // })
+
+    document.getElementById('text').addEventListener('keyup', function(even){
+        const varey = even.target.value;
+        
+        if(varey == 'delete'){
+            document.getElementById('btu').removeAttribute('disabled');
+            
+        }else{
+            document.getElementById('btu').setAttribute('disabled', true)
+        }
+    })
+
+  document.getElementById('btu').addEventListener('click', function(){
+    const dis = document.getElementById('creat');
+    dis.style.display = 'none';
+  })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dome js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="kuler">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident similique aspernatur ad consequuntur iure sed officia nulla id architecto perspiciatis fuga earum assumenda odit voluptatibus atque officiis qui impedit quaerat incidunt libero, possimus enim? Voluptate facere ut aperiam deserunt velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident similique aspernatur ad consequuntur iure sed officia nulla id architecto perspiciatis fuga earum assumenda odit voluptatibus atque officiis qui impedit quaerat incidunt libero, possimus enim? Voluptate facere ut aperiam deserunt velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident similique aspernatur ad consequuntur iure sed officia nulla id architecto perspiciatis fuga earum assumenda odit voluptatibus atque officiis qui impedit quaerat incidunt libero, possimus enim? Voluptate facere ut aperiam deserunt velit?</p>
+</div>
+
+<textarea  name="" id="tetx" cols="30" rows="10"></textarea>
+
+<button id="cloiv">click</button>
+    
+    <h2>Hello Bangladash</h2>
+    <button onclick="console.log('Hello bangladash')">click</button>
+    <p>Login from</p>
+    <button onclick="document.body.style.background='black'">Another</button>
+    <button id="reb">Red</button>
+    <button id="orangr">orang</button>
+
+
+    <h1 id="all">Einal Dome even</h1><br><br>
+
+    <h3 id="click">Defol valu</h3>
+
+    <button onclick="handal()">On Clock</button>
+    <button id="clik">HAnder add</button><br><br>
+
+
+    <p id="change"> Not Now input</p>
+    <input id="input" type="text">
+    <button id="update">Update</button>
+
+    <script>
+      document.getElementById('update').addEventListener('click', function(){
+        const inputs = document.getElementById('input');
+        const lost = inputs.value;
+
+        const setvalu = document.getElementById('change');
+         setvalu.innerText = lost;
+         inputs.value = '';
+      })
+    </script>
+    
+    <script src="js/couston.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body id="hed">
+    
+    <h1 >Hello Banbladash</h1>
+
+    <section id="done">
+        <ul id="ul">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Delectus, explicabo quae.</li>
+            <li class="item">Ipsa, iure possimus.</li>
+            <li class="item">Voluptatibus, alias nostrum.</li>
+            <li class="item">Porro, accusamus qui.</li>
+            <li class="item">Laudantium, ex quisquam?</li>
+        </ul>
+        <button id="item-add">Add</button>
+    </section>
+
+    <script>
+
+        const temadd = document.getElementById('item-add').addEventListener('click' ,function(){
+            const listitem = document.getElementById('ul');
+            
+            const li = document.createElement('li');
+            li.innerText = 'text Boy add in line';
+            li.classList.add('item');
+            listitem.appendChild(li);
+
+           
+            
+        })
+
+        document.getElementById('ul').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target)
+        });
+        
+    </script>
+
+</body>
+</html>
