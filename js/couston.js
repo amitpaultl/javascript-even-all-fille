@@ -13,10 +13,10 @@ function handal(){
     hander.innerText = 'Handal text toi on my'
 }
 
-document.getElementById('clivkr').addEventListener('click' , function(){
-    const newni = document.getElementById('all');
-    newni.innerText = '1100000222222003333' 
-})
+// document.getElementById('clivkr').addEventListener('click' , function(){
+//     const newni = document.getElementById('all');
+//     newni.innerText = '1100000222222003333' 
+// })
 
 document.getElementById('cloiv').addEventListener('click', function(){
     const textArea = document.getElementById('tetx');
